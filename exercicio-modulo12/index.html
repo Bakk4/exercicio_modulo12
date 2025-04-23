@@ -1,0 +1,72 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #ccc, #fff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .form-wrapper {
+        width: 60%;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+        .form-wrapper {
+            width: 90%;
+        }
+        }
+    </style>
+    </head>
+    <body>
+
+    <div class="form-wrapper">
+        <h2 class="text-center mb-4">Formulário de Cadastro</h2>
+        <form>
+        <!-- Nome -->
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+        </div>
+
+        <!-- E-mail -->
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+        </div>
+
+        <!-- Telefone -->
+        <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefone" placeholder="(99) 99999-9999">
+        </div>
+
+        <!-- Switch para termos do site -->
+        <div class="form-check form-switch mb-4">
+            <input class="form-check-input" type="checkbox" id="termos">
+            <label class="form-check-label" for="termos">Li os termos do site</label>
+        </div>
+
+        <!-- Botão -->
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
